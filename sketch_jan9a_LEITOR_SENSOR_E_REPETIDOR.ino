@@ -8,16 +8,16 @@
 const char* SSID = "VALDIR_2G";
 const char* PASSWORD = "1020304050";
 
-const char* googleScriptURL = "https://script.google.com/macros/s/AKfycbzlyOlhIX4A6wOj4qG-pD5FBrHEJOYeMkPd9z5lm-XutdDxgkUTTdnL4AJtrVRUFtcw/exec";
+const char* googleScriptURL = "https://script.google.com/macros/s/COLOQUE AQUI A URL DO GOOGLE SCRIPT";
 
-const int pinoSensor = 5;
-const char* idSensor = "ALB603";
+const int pinoSensor = N; // COLOQUE AQUI O PINO A SER CONECTADO AO SENSOR;
+const char* idSensor = "XXXXXX"; //COLOQUE AQUI A IDENTIFICAÇÃO DO SENSOR;
 
 WiFiClientSecure client;
 HTTPClient http;
 bool estadoAnterior = HIGH;
 
-float valorInicial = 4998.0;
+float valorInicial = 4998.0; // COLOQUE AQUI O NUMERO INICIAL DO MEDIDOR DE GÁS;
 const float limite = 1000.0;
 float proximoEnvio = (valorInicial / limite) * limite + limite;
 

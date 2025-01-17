@@ -83,7 +83,7 @@ void conectarWiFi() {
     configTime(0, 0, "pool.ntp.org");
 
     // Configura o ESP32 como repetidor WiFi
-    WiFi.softAP("LEITORES_REEDSWITCH", "Cram250102024");
+    WiFi.softAP("LEITORES_REEDSWITCH", "123456789"); // CRIE AQUI A SENHA DO REPETIDOR;
     Serial.println("Repetidor WiFi configurado com sucesso");
   } else {
     Serial.println("\nErro ao conectar WiFi");
